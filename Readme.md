@@ -21,7 +21,7 @@ python APIWeather.py
 В поле `sender` необходимо указать Вашу почту, в поле `password` пароль сгенерированный 
 на gmail.com
 
-`Мой ВК`: <a href='vk.com/tregzcode'>VK</a>
+`Мой ВК`: <a href='https://vk.com/tregzcode'>VK</a>
 
 `Buy my music`: <a href='https://www.beatport.com/artist/tregz/618849'>Beatport</a>
 
