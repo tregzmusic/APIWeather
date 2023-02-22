@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 import datetime
 import smtplib
 from email.mime.text import MIMEText
@@ -13,7 +12,7 @@ header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
                         'Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.46', 'Accept': '*/*'}
 
 locality = 'Ярославль'   # input('Write name locality:\n')
-appid = '3ef457b391a5bfbc2a713f456084be58'
+appid = settings.appid  # appid openweather
 
 params = {
     'q': locality,
@@ -22,8 +21,8 @@ params = {
 try:
     while True:
         def send_email(message):
-            sender = settings.sender
-            password = settings.password
+            sender = settings.sender  # your email
+            password = settings.password  # your pass (gmail)
 
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.starttls()
